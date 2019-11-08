@@ -35,7 +35,7 @@ public class MenuWriter {
         mapper.setVisibility(PropertyAccessor.FIELD, JsonAutoDetect.Visibility.ANY);
 // as a default, we'll use menu.json as the file name
         String fileName = (menuFileName.equals(null)|| menuFileName.equals("") || menuFileName.equals(" ") ) ? "menu.json": menuFileName;
-        Path path = Paths.get(System.getProperty("user.dir"), "src\\main\\resources\\",fileName);
+        Path path = Paths.get(System.getProperty("user.dir"), "src", "main", "resources", fileName);
 
         File f = new File(path.toString());
             try {

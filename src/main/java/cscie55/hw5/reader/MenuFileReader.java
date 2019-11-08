@@ -23,10 +23,9 @@ public class MenuFileReader {
     public List<Dish> read(String fileName){
 
         ObjectMapper mapper = new ObjectMapper();
-
+          System.out.println("Hi there");
         mapper.setVisibility(PropertyAccessor.FIELD, JsonAutoDetect.Visibility.ANY);
-        String filePath = "src\\main\\resources\\";
-        Path path = Paths.get(System.getProperty("user.dir"), filePath,fileName);
+        Path path = Paths.get(System.getProperty("user.dir"), "src", "main", "resources", fileName);
         File f = new File(path.toString());
         List<Dish> menu = null;
         if(f.exists()){
