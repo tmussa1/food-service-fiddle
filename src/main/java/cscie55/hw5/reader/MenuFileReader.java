@@ -8,6 +8,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import cscie55.hw5.api.Shop;
 import cscie55.hw5.foodservice.Dish;
 import cscie55.hw5.foodservice.TakeOutShop;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.io.File;
 import java.io.IOException;
@@ -20,10 +22,13 @@ import java.util.List;
 
 public class MenuFileReader {
 
+    private static final Logger logger = LogManager.getLogger(MenuFileReader.class.getName());
+
     public List<Dish> read(String fileName){
 
         ObjectMapper mapper = new ObjectMapper();
-          System.out.println("Hi there");
+        logger.info("Read from file");
+
         mapper.setVisibility(PropertyAccessor.FIELD, JsonAutoDetect.Visibility.ANY);
         Path path = Paths.get(System.getProperty("user.dir"), "src", "main", "resources", fileName);
         File f = new File(path.toString());

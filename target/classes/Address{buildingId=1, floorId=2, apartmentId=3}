@@ -1,8 +1,14 @@
 [ {
-  "name" : "rice",
-  "vegetarian" : true,
-  "calories" : 350,
-  "type" : "OTHER",
+  "name" : "prawns",
+  "vegetarian" : false,
+  "calories" : 400,
+  "type" : "FISH",
+  "menu" : null
+}, {
+  "name" : "beef",
+  "vegetarian" : false,
+  "calories" : 700,
+  "type" : "MEAT",
   "menu" : null
 }, {
   "name" : "chicken",
@@ -17,15 +23,9 @@
   "type" : "OTHER",
   "menu" : null
 }, {
-  "name" : "salmon",
+  "name" : "prawns",
   "vegetarian" : false,
-  "calories" : 450,
+  "calories" : 400,
   "type" : "FISH",
-  "menu" : null
-}, {
-  "name" : "french fries",
-  "vegetarian" : true,
-  "calories" : 530,
-  "type" : "OTHER",
   "menu" : null
 } ]

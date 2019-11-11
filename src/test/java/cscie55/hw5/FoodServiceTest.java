@@ -142,6 +142,8 @@ public class FoodServiceTest {
         //TODO: create an ArrayList<Dish> of 10 Dishes here in the test class
         // and add them to the TakeOutShop's menu using the addMenuItemList that you implemented there.
         // use helper method getRandomOrder(int numItems)
+        List<Dish> randomDishes = createDishes();
+        takeOutShop.addMenuItemList(randomDishes);
         assertTrue(menu.size() == 19);
     }
 
@@ -216,8 +218,7 @@ That menu contains 9 elements
     @Test
     public void testGenerateReceipt(){
         Address addr = new Address(1,2,3);
-        MenuWriter.publish(addr.toString(),getRandomOrder(5));
-
+        MenuWriter.publish(addr.toString(), getRandomOrder(5));
     }
 
     @Test
@@ -225,9 +226,10 @@ That menu contains 9 elements
         assertEquals(9,takeOutShop.getMenu().size());
         MenuFileReader mfr = new MenuFileReader();
         //TODO: replace fileName with the one you created in testPublishMenu
-        List<Dish> importedMenu = mfr.read("YOUR_FILE_NAME_HERE");
+        List<Dish> importedMenu = mfr.read("tofik_menu.json");
         takeOutShop.setNewMenu(importedMenu);
         assertEquals(importedMenu.size(),takeOutShop.getMenu().size());
+        assertEquals(10, takeOutShop.getMenu().size());
     }
 
     /**======================= helper methods  ================================ */

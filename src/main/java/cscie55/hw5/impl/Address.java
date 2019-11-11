@@ -55,11 +55,7 @@ public class Address {
 
 	@Override
 	public String toString() {
-		return "Address{" +
-				"buildingId=" + buildingId +
-				", floorId=" + floorId +
-				", apartmentId=" + apartmentId +
-				'}';
+		return "Receipt for floorId " + floorId;
 	}
 
 	@Override

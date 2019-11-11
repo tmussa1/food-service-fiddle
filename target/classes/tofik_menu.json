@@ -7,55 +7,55 @@
 }, {
   "name" : "Charleston red rice",
   "vegetarian" : false,
-  "calories" : 407,
+  "calories" : 140,
   "type" : "OTHER",
   "menu" : null
 }, {
   "name" : "Chicken bog",
   "vegetarian" : true,
-  "calories" : 148,
+  "calories" : 185,
   "type" : "MEAT",
   "menu" : null
 }, {
   "name" : "Dirty rice",
   "vegetarian" : false,
-  "calories" : 0,
+  "calories" : 388,
   "type" : "FISH",
   "menu" : null
 }, {
   "name" : "Glorified rice",
   "vegetarian" : true,
-  "calories" : 12,
+  "calories" : 161,
   "type" : "MEAT",
   "menu" : null
 }, {
   "name" : "Gumbo",
   "vegetarian" : false,
-  "calories" : 138,
+  "calories" : 148,
   "type" : "OTHER",
   "menu" : null
 }, {
   "name" : "Hawaiian haystack",
   "vegetarian" : true,
-  "calories" : 20,
+  "calories" : 60,
   "type" : "MEAT",
   "menu" : null
 }, {
   "name" : "Jambalaya",
   "vegetarian" : false,
-  "calories" : 1295,
+  "calories" : 431,
   "type" : "OTHER",
   "menu" : null
 }, {
   "name" : "Rice and gravy",
   "vegetarian" : true,
-  "calories" : 177,
+  "calories" : 422,
   "type" : "MEAT",
   "menu" : null
 }, {
   "name" : "Shrimp Creole",
   "vegetarian" : false,
-  "calories" : 777,
+  "calories" : 222,
   "type" : "FISH",
   "menu" : null
 } ]
