@@ -43,7 +43,7 @@
             <resource>
                 <directory>src/main/resources</directory>
                 <filtering>true</filtering>
-                <targetPath>${project.build.directory}</targetPath>
+                <targetPath>${project.build.directory}/src/main/resources</targetPath>
                 <includes>
                     <include>*</include>
                 </includes>
