@@ -1,14 +1,8 @@
 [ {
-  "name" : "pork",
-  "vegetarian" : false,
-  "calories" : 800,
-  "type" : "MEAT",
-  "menu" : null
-}, {
-  "name" : "pork",
-  "vegetarian" : false,
-  "calories" : 800,
-  "type" : "MEAT",
+  "name" : "pizza",
+  "vegetarian" : true,
+  "calories" : 550,
+  "type" : "OTHER",
   "menu" : null
 }, {
   "name" : "salmon",
@@ -17,15 +11,21 @@
   "type" : "FISH",
   "menu" : null
 }, {
-  "name" : "rice",
+  "name" : "chicken",
+  "vegetarian" : false,
+  "calories" : 400,
+  "type" : "MEAT",
+  "menu" : null
+}, {
+  "name" : "pizza",
   "vegetarian" : true,
-  "calories" : 350,
+  "calories" : 550,
   "type" : "OTHER",
   "menu" : null
 }, {
-  "name" : "french fries",
+  "name" : "pizza",
   "vegetarian" : true,
-  "calories" : 530,
+  "calories" : 550,
   "type" : "OTHER",
   "menu" : null
 } ]

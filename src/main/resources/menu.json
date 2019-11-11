@@ -3,53 +3,53 @@
   "vegetarian" : false,
   "calories" : 800,
   "type" : "MEAT",
-  "menu" : null
+  "menu" : [ ]
 }, {
   "name" : "beef",
   "vegetarian" : false,
   "calories" : 700,
   "type" : "MEAT",
-  "menu" : null
+  "menu" : [ ]
 }, {
   "name" : "chicken",
   "vegetarian" : false,
   "calories" : 400,
   "type" : "MEAT",
-  "menu" : null
+  "menu" : [ ]
 }, {
   "name" : "french fries",
   "vegetarian" : true,
   "calories" : 530,
   "type" : "OTHER",
-  "menu" : null
+  "menu" : [ ]
 }, {
   "name" : "rice",
   "vegetarian" : true,
   "calories" : 350,
   "type" : "OTHER",
-  "menu" : null
+  "menu" : [ ]
 }, {
   "name" : "season fruit",
   "vegetarian" : true,
   "calories" : 120,
   "type" : "OTHER",
-  "menu" : null
+  "menu" : [ ]
 }, {
   "name" : "pizza",
   "vegetarian" : true,
   "calories" : 550,
   "type" : "OTHER",
-  "menu" : null
+  "menu" : [ ]
 }, {
   "name" : "prawns",
   "vegetarian" : false,
   "calories" : 400,
   "type" : "FISH",
-  "menu" : null
+  "menu" : [ ]
 }, {
   "name" : "salmon",
   "vegetarian" : false,
   "calories" : 450,
   "type" : "FISH",
-  "menu" : null
+  "menu" : [ ]
 } ]

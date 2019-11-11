@@ -1,31 +1,31 @@
 [ {
-  "name" : "pork",
+  "name" : "chicken",
   "vegetarian" : false,
-  "calories" : 800,
+  "calories" : 400,
   "type" : "MEAT",
-  "menu" : null
+  "menu" : [ ]
 }, {
-  "name" : "pork",
+  "name" : "prawns",
   "vegetarian" : false,
-  "calories" : 800,
+  "calories" : 400,
+  "type" : "FISH",
+  "menu" : [ ]
+}, {
+  "name" : "beef",
+  "vegetarian" : false,
+  "calories" : 700,
   "type" : "MEAT",
-  "menu" : null
+  "menu" : [ ]
 }, {
   "name" : "salmon",
   "vegetarian" : false,
   "calories" : 450,
   "type" : "FISH",
-  "menu" : null
-}, {
-  "name" : "rice",
-  "vegetarian" : true,
-  "calories" : 350,
-  "type" : "OTHER",
-  "menu" : null
+  "menu" : [ ]
 }, {
   "name" : "french fries",
   "vegetarian" : true,
   "calories" : 530,
   "type" : "OTHER",
-  "menu" : null
+  "menu" : [ ]
 } ]

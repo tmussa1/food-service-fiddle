@@ -212,6 +212,7 @@ public class FoodServiceTest {
             } else {
                 dish = new Dish(dishNames[i], isVegetarian, calories, type2);
             }
+            dish.getMenu().addAll(Arrays.asList(createRandomDishes()));
             randomDishes.add(dish);
         }
         return randomDishes;

@@ -1,5 +1,6 @@
 package cscie55.hw5.foodservice;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Dish {
@@ -20,6 +21,7 @@ public class Dish {
         this.vegetarian = isVegetarian;
         this.calories = calories;
         this.type = type;
+        this.menu = new ArrayList<>();
     }
 
     public String getName() {
