@@ -1,22 +1,4 @@
 [ {
-  "name" : "beef",
-  "vegetarian" : false,
-  "calories" : 700,
-  "type" : "MEAT",
-  "menu" : [ ]
-}, {
-  "name" : "prawns",
-  "vegetarian" : false,
-  "calories" : 400,
-  "type" : "FISH",
-  "menu" : [ ]
-}, {
-  "name" : "pork",
-  "vegetarian" : false,
-  "calories" : 800,
-  "type" : "MEAT",
-  "menu" : [ ]
-}, {
   "name" : "rice",
   "vegetarian" : true,
   "calories" : 350,
@@ -26,6 +8,24 @@
   "name" : "salmon",
   "vegetarian" : false,
   "calories" : 450,
+  "type" : "FISH",
+  "menu" : [ ]
+}, {
+  "name" : "chicken",
+  "vegetarian" : false,
+  "calories" : 400,
+  "type" : "MEAT",
+  "menu" : [ ]
+}, {
+  "name" : "pork",
+  "vegetarian" : false,
+  "calories" : 800,
+  "type" : "MEAT",
+  "menu" : [ ]
+}, {
+  "name" : "prawns",
+  "vegetarian" : false,
+  "calories" : 400,
   "type" : "FISH",
   "menu" : [ ]
 } ]
