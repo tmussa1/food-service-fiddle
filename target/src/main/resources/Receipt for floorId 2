@@ -1,31 +1,31 @@
 [ {
-  "name" : "rice",
+  "name" : "pizza",
   "vegetarian" : true,
-  "calories" : 350,
+  "calories" : 550,
   "type" : "OTHER",
   "menu" : [ ]
 }, {
-  "name" : "salmon",
-  "vegetarian" : false,
-  "calories" : 450,
-  "type" : "FISH",
+  "name" : "season fruit",
+  "vegetarian" : true,
+  "calories" : 120,
+  "type" : "OTHER",
   "menu" : [ ]
 }, {
-  "name" : "chicken",
+  "name" : "beef",
   "vegetarian" : false,
-  "calories" : 400,
+  "calories" : 700,
   "type" : "MEAT",
   "menu" : [ ]
 }, {
-  "name" : "pork",
+  "name" : "beef",
   "vegetarian" : false,
-  "calories" : 800,
+  "calories" : 700,
   "type" : "MEAT",
   "menu" : [ ]
 }, {
-  "name" : "prawns",
-  "vegetarian" : false,
-  "calories" : 400,
-  "type" : "FISH",
+  "name" : "french fries",
+  "vegetarian" : true,
+  "calories" : 530,
+  "type" : "OTHER",
   "menu" : [ ]
 } ]

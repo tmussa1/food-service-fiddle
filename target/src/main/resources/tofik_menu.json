@@ -4,58 +4,16 @@
   "calories" : 0,
   "type" : "MEAT",
   "menu" : [ {
-    "name" : "french fries",
-    "vegetarian" : true,
-    "calories" : 530,
-    "type" : "OTHER",
-    "menu" : [ ]
-  }, {
-    "name" : "season fruit",
-    "vegetarian" : true,
-    "calories" : 120,
-    "type" : "OTHER",
-    "menu" : [ ]
-  }, {
     "name" : "pizza",
     "vegetarian" : true,
     "calories" : 550,
     "type" : "OTHER",
     "menu" : [ ]
-  } ]
-}, {
-  "name" : "Charleston red rice",
-  "vegetarian" : false,
-  "calories" : 2,
-  "type" : "OTHER",
-  "menu" : [ {
-    "name" : "prawns",
+  }, {
+    "name" : "pork",
     "vegetarian" : false,
-    "calories" : 400,
-    "type" : "FISH",
-    "menu" : [ ]
-  }, {
-    "name" : "french fries",
-    "vegetarian" : true,
-    "calories" : 530,
-    "type" : "OTHER",
-    "menu" : [ ]
-  }, {
-    "name" : "french fries",
-    "vegetarian" : true,
-    "calories" : 530,
-    "type" : "OTHER",
-    "menu" : [ ]
-  } ]
-}, {
-  "name" : "Chicken bog",
-  "vegetarian" : true,
-  "calories" : 0,
-  "type" : "MEAT",
-  "menu" : [ {
-    "name" : "season fruit",
-    "vegetarian" : true,
-    "calories" : 120,
-    "type" : "OTHER",
+    "calories" : 800,
+    "type" : "MEAT",
     "menu" : [ ]
   }, {
     "name" : "chicken",
@@ -63,6 +21,24 @@
     "calories" : 400,
     "type" : "MEAT",
     "menu" : [ ]
+  } ]
+}, {
+  "name" : "Charleston red rice",
+  "vegetarian" : false,
+  "calories" : 0,
+  "type" : "OTHER",
+  "menu" : [ {
+    "name" : "beef",
+    "vegetarian" : false,
+    "calories" : 700,
+    "type" : "MEAT",
+    "menu" : [ ]
+  }, {
+    "name" : "prawns",
+    "vegetarian" : false,
+    "calories" : 400,
+    "type" : "FISH",
+    "menu" : [ ]
   }, {
     "name" : "prawns",
     "vegetarian" : false,
@@ -71,15 +47,45 @@
     "menu" : [ ]
   } ]
 }, {
+  "name" : "Chicken bog",
+  "vegetarian" : true,
+  "calories" : 74,
+  "type" : "MEAT",
+  "menu" : [ {
+    "name" : "season fruit",
+    "vegetarian" : true,
+    "calories" : 120,
+    "type" : "OTHER",
+    "menu" : [ ]
+  }, {
+    "name" : "prawns",
+    "vegetarian" : false,
+    "calories" : 400,
+    "type" : "FISH",
+    "menu" : [ ]
+  }, {
+    "name" : "salmon",
+    "vegetarian" : false,
+    "calories" : 450,
+    "type" : "FISH",
+    "menu" : [ ]
+  } ]
+}, {
   "name" : "Dirty rice",
   "vegetarian" : false,
-  "calories" : 666,
+  "calories" : 175,
   "type" : "FISH",
   "menu" : [ {
-    "name" : "beef",
+    "name" : "french fries",
+    "vegetarian" : true,
+    "calories" : 530,
+    "type" : "OTHER",
+    "menu" : [ ]
+  }, {
+    "name" : "prawns",
     "vegetarian" : false,
-    "calories" : 700,
-    "type" : "MEAT",
+    "calories" : 400,
+    "type" : "FISH",
     "menu" : [ ]
   }, {
     "name" : "pizza",
@@ -87,28 +93,22 @@
     "calories" : 550,
     "type" : "OTHER",
     "menu" : [ ]
-  }, {
+  } ]
+}, {
+  "name" : "Glorified rice",
+  "vegetarian" : true,
+  "calories" : 129,
+  "type" : "MEAT",
+  "menu" : [ {
     "name" : "french fries",
     "vegetarian" : true,
     "calories" : 530,
     "type" : "OTHER",
     "menu" : [ ]
-  } ]
-}, {
-  "name" : "Glorified rice",
-  "vegetarian" : true,
-  "calories" : 465,
-  "type" : "MEAT",
-  "menu" : [ {
-    "name" : "beef",
-    "vegetarian" : false,
-    "calories" : 700,
-    "type" : "MEAT",
-    "menu" : [ ]
   }, {
-    "name" : "season fruit",
+    "name" : "rice",
     "vegetarian" : true,
-    "calories" : 120,
+    "calories" : 350,
     "type" : "OTHER",
     "menu" : [ ]
   }, {
@@ -121,43 +121,37 @@
 }, {
   "name" : "Gumbo",
   "vegetarian" : false,
-  "calories" : 1233,
+  "calories" : 82,
   "type" : "OTHER",
   "menu" : [ {
-    "name" : "pizza",
-    "vegetarian" : true,
-    "calories" : 550,
-    "type" : "OTHER",
-    "menu" : [ ]
-  }, {
     "name" : "rice",
     "vegetarian" : true,
     "calories" : 350,
     "type" : "OTHER",
     "menu" : [ ]
   }, {
-    "name" : "season fruit",
+    "name" : "salmon",
+    "vegetarian" : false,
+    "calories" : 450,
+    "type" : "FISH",
+    "menu" : [ ]
+  }, {
+    "name" : "pizza",
     "vegetarian" : true,
-    "calories" : 120,
+    "calories" : 550,
     "type" : "OTHER",
     "menu" : [ ]
   } ]
 }, {
   "name" : "Hawaiian haystack",
   "vegetarian" : true,
-  "calories" : 1628,
+  "calories" : 88,
   "type" : "MEAT",
   "menu" : [ {
-    "name" : "season fruit",
-    "vegetarian" : true,
-    "calories" : 120,
-    "type" : "OTHER",
-    "menu" : [ ]
-  }, {
-    "name" : "prawns",
+    "name" : "chicken",
     "vegetarian" : false,
     "calories" : 400,
-    "type" : "FISH",
+    "type" : "MEAT",
     "menu" : [ ]
   }, {
     "name" : "salmon",
@@ -165,41 +159,23 @@
     "calories" : 450,
     "type" : "FISH",
     "menu" : [ ]
-  } ]
-}, {
-  "name" : "Jambalaya",
-  "vegetarian" : false,
-  "calories" : 0,
-  "type" : "OTHER",
-  "menu" : [ {
-    "name" : "pork",
-    "vegetarian" : false,
-    "calories" : 800,
-    "type" : "MEAT",
-    "menu" : [ ]
   }, {
-    "name" : "chicken",
-    "vegetarian" : false,
-    "calories" : 400,
-    "type" : "MEAT",
-    "menu" : [ ]
-  }, {
-    "name" : "chicken",
-    "vegetarian" : false,
-    "calories" : 400,
-    "type" : "MEAT",
-    "menu" : [ ]
-  } ]
-}, {
-  "name" : "Rice and gravy",
-  "vegetarian" : true,
-  "calories" : 444,
-  "type" : "MEAT",
-  "menu" : [ {
     "name" : "season fruit",
     "vegetarian" : true,
     "calories" : 120,
     "type" : "OTHER",
+    "menu" : [ ]
+  } ]
+}, {
+  "name" : "Jambalaya",
+  "vegetarian" : false,
+  "calories" : 492,
+  "type" : "OTHER",
+  "menu" : [ {
+    "name" : "prawns",
+    "vegetarian" : false,
+    "calories" : 400,
+    "type" : "FISH",
     "menu" : [ ]
   }, {
     "name" : "pizza",
@@ -208,33 +184,57 @@
     "type" : "OTHER",
     "menu" : [ ]
   }, {
-    "name" : "pork",
+    "name" : "beef",
     "vegetarian" : false,
-    "calories" : 800,
+    "calories" : 700,
     "type" : "MEAT",
     "menu" : [ ]
   } ]
 }, {
-  "name" : "Shrimp Creole",
-  "vegetarian" : false,
-  "calories" : 1198,
-  "type" : "FISH",
+  "name" : "Rice and gravy",
+  "vegetarian" : true,
+  "calories" : 549,
+  "type" : "MEAT",
   "menu" : [ {
-    "name" : "salmon",
+    "name" : "prawns",
     "vegetarian" : false,
-    "calories" : 450,
+    "calories" : 400,
     "type" : "FISH",
-    "menu" : [ ]
-  }, {
-    "name" : "season fruit",
-    "vegetarian" : true,
-    "calories" : 120,
-    "type" : "OTHER",
     "menu" : [ ]
   }, {
     "name" : "french fries",
     "vegetarian" : true,
     "calories" : 530,
+    "type" : "OTHER",
+    "menu" : [ ]
+  }, {
+    "name" : "pizza",
+    "vegetarian" : true,
+    "calories" : 550,
+    "type" : "OTHER",
+    "menu" : [ ]
+  } ]
+}, {
+  "name" : "Shrimp Creole",
+  "vegetarian" : false,
+  "calories" : 466,
+  "type" : "FISH",
+  "menu" : [ {
+    "name" : "beef",
+    "vegetarian" : false,
+    "calories" : 700,
+    "type" : "MEAT",
+    "menu" : [ ]
+  }, {
+    "name" : "beef",
+    "vegetarian" : false,
+    "calories" : 700,
+    "type" : "MEAT",
+    "menu" : [ ]
+  }, {
+    "name" : "rice",
+    "vegetarian" : true,
+    "calories" : 350,
     "type" : "OTHER",
     "menu" : [ ]
   } ]
