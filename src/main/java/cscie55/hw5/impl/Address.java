@@ -51,8 +51,6 @@ public class Address {
 		this.apartmentId = apartmentId;
 	}
 
-    //TODO: create toString method
-
 	@Override
 	public String toString() {
 		return "Receipt for floorId " + floorId;

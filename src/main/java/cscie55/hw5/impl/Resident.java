@@ -72,7 +72,6 @@ public class Resident extends Person implements Passenger {
 
     @Override
     public void arriveOnFloor(int arrivalFloor) {
-        //set the state properties of the resident to reflect their arrival
         this.setDestination(Building.UNDEFINED_FLOOR);
         this.setCurrrentFloor(arrivalFloor);
     }

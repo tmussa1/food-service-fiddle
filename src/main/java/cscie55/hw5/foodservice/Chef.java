@@ -1,5 +1,8 @@
 package cscie55.hw5.foodservice;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.util.ArrayDeque;
 import java.util.Map;
 
@@ -12,11 +15,11 @@ public class Chef implements Runnable{
     private Map<Integer, ArrayDeque<FoodOrder>> ordersReady;
     private static int orderCompletedId = 0;
     private int chefId = 0;
-    // static int hiringNumber is used by HR...
     private static int hiringNumber = 0;
-    // create 2 locking objects
     Object  lock1 = new Object();
     Object  lock2 = new Object();
+
+    private static final Logger logger = LogManager.getLogger(Chef.class.getName());
 
     public Chef(String name, Map<Integer, ArrayDeque<FoodOrder>> ordersIn , Map<Integer, ArrayDeque<FoodOrder>> ordersReady){
         this.name = name;
@@ -25,10 +28,6 @@ public class Chef implements Runnable{
         this.chefId = ++hiringNumber;
     }
 
-    /**
-     * this method wraps the run method, setting the order object on which the Chef will operate
-     * @param order
-     */
     protected void prepareOrder(FoodOrder order){
         if(null != order) {
             this.order = order;
@@ -51,12 +50,15 @@ public class Chef implements Runnable{
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        int destinationFloor = 1;//NumUtil.getRandomBetween(0,6);
-        // mark the order completed with an Id
-        // Orders will be added to a Map sorted by FloorId.
-       // int destinationFloor = order.getAddress().getFloorId();
-       // ArrayDeque<FoodOrder> inList = ordersIn.get(destinationFloor);
-        //Synchronize the minimum collection for removal of the order from the ordersIn and placment into ordersReady
+        int destinationFloor = 1;
+        /*
+        NumUtil.getRandomBetween(0,6);
+         mark the order completed with an Id
+         Orders will be added to a Map sorted by FloorId.
+        int destinationFloor = order.getAddress().getFloorId();
+        ArrayDeque<FoodOrder> inList = ordersIn.get(destinationFloor);
+        Synchronize the minimum collection for removal of the order from the ordersIn and placment into ordersReady
+         */
         Object outerLock = chefId > ordersIn.size() ?  lock1 : lock2;
         Object innerLock = chefId > ordersIn.size() ? lock2 : lock1;
         synchronized(outerLock) {
@@ -70,7 +72,8 @@ public class Chef implements Runnable{
                 orderReadyList.addLast(order);
             }
         }
-        //log a message indicating that the order has moved from the inputList to the ready list
+
+        logger.info("Food is prepared and moved to ready list");
     }
 
     public String getName(){

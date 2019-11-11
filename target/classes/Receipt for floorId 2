@@ -1,0 +1,31 @@
+[ {
+  "name" : "pork",
+  "vegetarian" : false,
+  "calories" : 800,
+  "type" : "MEAT",
+  "menu" : null
+}, {
+  "name" : "pork",
+  "vegetarian" : false,
+  "calories" : 800,
+  "type" : "MEAT",
+  "menu" : null
+}, {
+  "name" : "salmon",
+  "vegetarian" : false,
+  "calories" : 450,
+  "type" : "FISH",
+  "menu" : null
+}, {
+  "name" : "rice",
+  "vegetarian" : true,
+  "calories" : 350,
+  "type" : "OTHER",
+  "menu" : null
+}, {
+  "name" : "french fries",
+  "vegetarian" : true,
+  "calories" : 530,
+  "type" : "OTHER",
+  "menu" : null
+} ]

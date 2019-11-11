@@ -3,9 +3,7 @@ package cscie55.hw5.foodservice;
 import cscie55.hw5.api.Shop;
 import cscie55.hw5.impl.Address;
 
-import java.nio.file.Path;
 import java.util.*;
-import java.util.stream.Collectors;
 
 import cscie55.hw5.utils.NumUtil;
 import cscie55.hw5.writer.MenuWriter;
@@ -60,18 +58,20 @@ public class TakeOutShop implements Shop<Dish> {
         return menu;
     }
 
+    /**
+     * Sets menu
+     * @param newMenu
+     */
     @Override
     public void setNewMenu(List<Dish> newMenu) {
-        //TODO: implement. This method replaces the current menu with the newMenu items
         this.menu = newMenu;
     }
 
     /**
-     * This method should use the MenuWriter's publish method to write a receipt for a foodOrder
+     * Generates receipt and the address(floor id) is used to identify the receipts
      * @param foodOrder
      */
     public void generateReceipt(FoodOrder foodOrder){
-        //TODO: implement
         MenuWriter.publish(foodOrder.getAddress().toString(), foodOrder.getItems());
     }
     /**
@@ -84,7 +84,6 @@ public class TakeOutShop implements Shop<Dish> {
     }
 
     public void addMenuItemList(List<Dish> dishes) {
-        //TODO: add the dishes passed in to the current menu
         menu.addAll(dishes);
     }
 
@@ -116,11 +115,11 @@ public class TakeOutShop implements Shop<Dish> {
      */
     public void processOrder(FoodOrder order) {
         Chef randomChef = chefs.get(NumUtil.getRandomBetween(0, 9));
-        randomChef.run();//.prepareOrder(order);
+        randomChef.run();
     }
 
     public void pickupOrdersToDeliver() {
-        //for later, when delivery service starts...
+
         ordersReadyOut.forEach((key, value) -> {
 
         });

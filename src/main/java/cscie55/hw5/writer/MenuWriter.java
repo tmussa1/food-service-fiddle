@@ -33,7 +33,7 @@ public class MenuWriter {
     public static void publish(String menuFileName, List<Dish> menu) {
         ObjectMapper mapper = new ObjectMapper();
         mapper.setVisibility(PropertyAccessor.FIELD, JsonAutoDetect.Visibility.ANY);
-// as a default, we'll use menu.json as the file name
+        // as a default,menu.json is the file name
         String fileName = (menuFileName.equals(null)|| menuFileName.equals("") || menuFileName.equals(" ") ) ? "menu.json": menuFileName;
         Path path = Paths.get(System.getProperty("user.dir"), "src", "main", "resources", fileName);
 

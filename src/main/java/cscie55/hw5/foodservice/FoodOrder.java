@@ -27,7 +27,6 @@ public class FoodOrder implements Order {
     private int pickupId = UNDEFINED;
     private int orderAckId = UNDEFINED;
     private String chefSignature = "";
-    // todo: implement a logger
     private static final Logger LOGGER = LogManager.getLogger(FoodOrder.class.getName());
 
     /**
@@ -39,7 +38,6 @@ public class FoodOrder implements Order {
         orderId = (++inventoryId);
         this.address = address;
         this.items = Arrays.asList(dishes);
-        //todo: log a message level 'info' indicating that the order is created
         LOGGER.info("Order has been created");
     }
 
@@ -89,7 +87,6 @@ public class FoodOrder implements Order {
 
     @Override
     public boolean equals(Object o) {
-        //impl equals()
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         FoodOrder foodOrder = (FoodOrder) o;
@@ -101,19 +98,15 @@ public class FoodOrder implements Order {
 
     @Override
     public int hashCode() {
-        //impl hashcode()
         return Objects.hash(getOrderId(), getItems(), getAddress(), getPickupId());
     }
 
-
-
      /**
-     * this method is intended for the consumer's use.
-      * IOW, it should be called when the order arrives at its destination
+     * This gets called when delivery person arrives to consumer's floor
      */
     @Override
     public void consume() {
-        //todo: log a message level 'info' indicating that the order is consumed
+        LOGGER.info("The order has been consumed");
     }
 }
 

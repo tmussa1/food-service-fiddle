@@ -15,7 +15,6 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 import static junit.framework.TestCase.assertTrue;
 import static org.junit.Assert.assertEquals;
@@ -139,9 +138,6 @@ public class FoodServiceTest {
 
     @Test
     public void testAddMenuItemList(){
-        //TODO: create an ArrayList<Dish> of 10 Dishes here in the test class
-        // and add them to the TakeOutShop's menu using the addMenuItemList that you implemented there.
-        // use helper method getRandomOrder(int numItems)
         List<Dish> randomDishes = createDishes();
         takeOutShop.addMenuItemList(randomDishes);
         assertTrue(menu.size() == 19);
@@ -149,19 +145,14 @@ public class FoodServiceTest {
 
     @Test
     public void testSetNewMenu(){
-        // original size of menu
         assertEquals(9, takeOutShop.getMenu().size());
         List<Dish> random = getRandomOrder(15);
         takeOutShop.setNewMenu(random);
         assertEquals(15, takeOutShop.getMenu().size());
     }
-/* NOTE: This test generated a file named 'menu.json' that contains a json representation of the original hard-coded menu in the TakeOutShop class.
-That menu contains 9 elements
- */
 
     @Test
     public void testPublishDefaultMenu() {
-        // original size hard-coded menu has 9 items
         assertEquals(9, takeOutShop.getMenu().size());
         MenuWriter.publish("menu.json", takeOutShop.getMenu());
     }
@@ -175,23 +166,35 @@ That menu contains 9 elements
 
     @Test
     public void testPublishMenu(){
-        // original size hard-coded menu has 9 items
+
         assertEquals(9,takeOutShop.getMenu().size());
-        //TODO: Manually create an ArrayList<Dish> of 10 Dishes here in the test class
-        // and add them to the TakeOutShop's menu using the addMenuItemList that you implemented there.
-        // dish format:
-        //new Dish(String name, boolean isVegetarian, int calories, Enum Dish.Type.[MEAT, FISH, OTHER]);
 
         List<Dish> randomDishes = createDishes();
         takeOutShop.addMenuItemList(randomDishes);
         takeOutShop.setNewMenu(randomDishes);
-        //TODO: add the above dishes to the takeOutShop's current menu using takeOutShop.setNewMenu as above
 
         assertEquals(10,takeOutShop.getMenu().size());
-        //TODO: publish new, improved menu to output using static method:MenuWriter.publish()
-        //TODO: provide a personal file name
         MenuWriter.publish("tofik_menu.json", takeOutShop.getMenu() );
     }
+
+
+    @Test
+    public void testGenerateReceipt(){
+        Address addr = new Address(1,2,3);
+        MenuWriter.publish(addr.toString(), getRandomOrder(5));
+    }
+
+    @Test
+    public void testLoadExternalMenuFile(){
+        assertEquals(9,takeOutShop.getMenu().size());
+        MenuFileReader mfr = new MenuFileReader();
+        List<Dish> importedMenu = mfr.read("tofik_menu.json");
+        takeOutShop.setNewMenu(importedMenu);
+        assertEquals(importedMenu.size(),takeOutShop.getMenu().size());
+        assertEquals(10, takeOutShop.getMenu().size());
+    }
+
+    /**======================= helper methods  ================================ */
 
     private List<Dish> createDishes() {
         List<Dish> randomDishes = new ArrayList<>();
@@ -213,26 +216,6 @@ That menu contains 9 elements
         }
         return randomDishes;
     }
-
-
-    @Test
-    public void testGenerateReceipt(){
-        Address addr = new Address(1,2,3);
-        MenuWriter.publish(addr.toString(), getRandomOrder(5));
-    }
-
-    @Test
-    public void testLoadExternalMenuFile(){
-        assertEquals(9,takeOutShop.getMenu().size());
-        MenuFileReader mfr = new MenuFileReader();
-        //TODO: replace fileName with the one you created in testPublishMenu
-        List<Dish> importedMenu = mfr.read("tofik_menu.json");
-        takeOutShop.setNewMenu(importedMenu);
-        assertEquals(importedMenu.size(),takeOutShop.getMenu().size());
-        assertEquals(10, takeOutShop.getMenu().size());
-    }
-
-    /**======================= helper methods  ================================ */
 
     private Address createRandomAddress(){
         return new Address(1, NumUtil.getRandomBetween(0,6), NumUtil.getRandomBetween(0,3));

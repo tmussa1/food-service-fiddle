@@ -11,9 +11,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-
-// add fields to DeliveryPerson class similar to Resident class, as in HW 3.
-
 public class DeliveryPerson extends Person implements Passenger, Runnable{
     private Map<Integer, List<FoodOrder>> ordersReady = new HashMap<>();
     private Shop employer;
@@ -29,32 +26,26 @@ public class DeliveryPerson extends Person implements Passenger, Runnable{
 
     @Override
     public int getDestination() {
-    // implement
         return destination;
     }
 
     @Override
     public void setDestination(int destinationFloor) {
-     // implement
         this.destination = destinationFloor;
     }
 
     @Override
     public int getCurrentFloor() {
-        // implement
         return currentFloor;
     }
 
     @Override
     public void setCurrrentFloor(int currentFloor) {
-    // implement
         this.currentFloor = currentFloor;
     }
 
     @Override
     public void arriveOnFloor(int arrivalFloor) {
-     //  implement. Set the state of the DeliveryPerson. Their currentFloor is the arrival flor.
-        //  but the delivery person must return to floor 1 so set destination accordingly.
         this.currentFloor = arrivalFloor;
         this.destination = 1;
     }
@@ -64,14 +55,22 @@ public class DeliveryPerson extends Person implements Passenger, Runnable{
     }
 
     public int getDoorKey() {
-        // implement
         return getAddress().hashCode();
     }
 
+    /**
+     * The list of dishes assigned to a delivery person is consumed and cleared upon delivery person's arrival
+     * to the floor in question
+     */
     @Override
     public void run() {
         if(ordersReady != null){
-           ordersReady.get(currentFloor).clear();
+
+            ordersReady.get(currentFloor).stream()
+                    .forEach(order -> order.consume());
+
+            ordersReady.get(currentFloor)
+                       .clear();
         }
 
     }

@@ -3,6 +3,8 @@ package cscie55.hw5.impl;
 import cscie55.hw5.api.Shop;
 import cscie55.hw5.foodservice.Dish;
 import cscie55.hw5.foodservice.FoodOrder;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.util.List;
 
@@ -10,7 +12,7 @@ public class WebBrowser {
 
     private Shop<Dish> foodService;
     private Apartment apartment;
-    //implement a logger
+    Logger LOGGER = LogManager.getLogger(WebBrowser.class.getName());
 
     /**
      * Constructor.
@@ -32,7 +34,7 @@ public class WebBrowser {
         FoodOrder fo = (FoodOrder) foodService
                 .placeOrder(this.apartment.getAddress(), itemsToOrder.toArray(new Dish[itemsToOrder.size()]));
         apartment.addOrderWaiting(fo);
-        // log a message w/ level info indicating that order has been submitted
+        LOGGER.info("Order has been submitted!");
         return (fo != null);
     }
 }
