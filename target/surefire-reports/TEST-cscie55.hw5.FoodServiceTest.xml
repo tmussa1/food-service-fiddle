@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="cscie55.hw5.FoodServiceTest" time="0.813" tests="15" errors="0" skipped="0" failures="0">
+<testsuite name="cscie55.hw5.FoodServiceTest" time="1.253" tests="15" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="12.0.1+12"/>
@@ -60,19 +60,19 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="placeOrderTest" classname="cscie55.hw5.FoodServiceTest" time="0.455"/>
-  <testcase name="testPublishMenu" classname="cscie55.hw5.FoodServiceTest" time="0.192"/>
-  <testcase name="testPrepareOrder" classname="cscie55.hw5.FoodServiceTest" time="0.052"/>
-  <testcase name="testPublishDefaultMenu" classname="cscie55.hw5.FoodServiceTest" time="0.006"/>
-  <testcase name="verifyShopAndMenu" classname="cscie55.hw5.FoodServiceTest" time="0"/>
-  <testcase name="testAddSingleMenuItem" classname="cscie55.hw5.FoodServiceTest" time="0"/>
-  <testcase name="testSetNewMenu" classname="cscie55.hw5.FoodServiceTest" time="0"/>
+  <testcase name="placeOrderTest" classname="cscie55.hw5.FoodServiceTest" time="0.486"/>
+  <testcase name="testPublishMenu" classname="cscie55.hw5.FoodServiceTest" time="0.56"/>
+  <testcase name="testPrepareOrder" classname="cscie55.hw5.FoodServiceTest" time="0.054"/>
+  <testcase name="testPublishDefaultMenu" classname="cscie55.hw5.FoodServiceTest" time="0.007"/>
+  <testcase name="verifyShopAndMenu" classname="cscie55.hw5.FoodServiceTest" time="0.001"/>
+  <testcase name="testAddSingleMenuItem" classname="cscie55.hw5.FoodServiceTest" time="0.001"/>
+  <testcase name="testSetNewMenu" classname="cscie55.hw5.FoodServiceTest" time="0.001"/>
   <testcase name="placeMultipleOrdersPerFloorTest" classname="cscie55.hw5.FoodServiceTest" time="0.001"/>
-  <testcase name="testFileReader" classname="cscie55.hw5.FoodServiceTest" time="0.073"/>
-  <testcase name="testDeliveryPeople" classname="cscie55.hw5.FoodServiceTest" time="0"/>
-  <testcase name="testLoadExternalMenuFile" classname="cscie55.hw5.FoodServiceTest" time="0.012"/>
-  <testcase name="webBrowserOrderTest" classname="cscie55.hw5.FoodServiceTest" time="0.012"/>
+  <testcase name="testFileReader" classname="cscie55.hw5.FoodServiceTest" time="0.099"/>
+  <testcase name="testDeliveryPeople" classname="cscie55.hw5.FoodServiceTest" time="0.001"/>
+  <testcase name="testLoadExternalMenuFile" classname="cscie55.hw5.FoodServiceTest" time="0.016"/>
+  <testcase name="webBrowserOrderTest" classname="cscie55.hw5.FoodServiceTest" time="0.013"/>
   <testcase name="testRushHour" classname="cscie55.hw5.FoodServiceTest" time="0.001"/>
-  <testcase name="testGenerateReceipt" classname="cscie55.hw5.FoodServiceTest" time="0.009"/>
-  <testcase name="testAddMenuItemList" classname="cscie55.hw5.FoodServiceTest" time="0"/>
+  <testcase name="testGenerateReceipt" classname="cscie55.hw5.FoodServiceTest" time="0.011"/>
+  <testcase name="testAddMenuItemList" classname="cscie55.hw5.FoodServiceTest" time="0.001"/>
 </testsuite>
