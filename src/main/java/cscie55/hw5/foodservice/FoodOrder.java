@@ -40,6 +40,7 @@ public class FoodOrder implements Order {
         this.address = address;
         this.items = Arrays.asList(dishes);
         //todo: log a message level 'info' indicating that the order is created
+        LOGGER.info("Order has been created");
     }
 
     public int getOrderId(){

@@ -63,6 +63,7 @@ public class TakeOutShop implements Shop<Dish> {
     @Override
     public void setNewMenu(List<Dish> newMenu) {
         //TODO: implement. This method replaces the current menu with the newMenu items
+        this.menu = newMenu;
     }
 
     /**
@@ -71,6 +72,7 @@ public class TakeOutShop implements Shop<Dish> {
      */
     public void generateReceipt(FoodOrder foodOrder){
         //TODO: implement
+        MenuWriter.publish(foodOrder.getAddress().toString(), foodOrder.getItems());
     }
     /**
      * This method allows the menu to grow.
@@ -83,6 +85,7 @@ public class TakeOutShop implements Shop<Dish> {
 
     public void addMenuItemList(List<Dish> dishes) {
         //TODO: add the dishes passed in to the current menu
+        menu.addAll(dishes);
     }
 
     /**

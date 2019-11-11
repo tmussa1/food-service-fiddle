@@ -14,10 +14,7 @@ import cscie55.hw5.writer.MenuWriter;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.ArrayDeque;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 import static junit.framework.TestCase.assertTrue;
@@ -91,7 +88,7 @@ public class FoodServiceTest {
         catch(NoSuchApartmentException nse){
 
         }
-         List<Dish> itemsToOrder= new ArrayList<>();
+        List<Dish> itemsToOrder= new ArrayList<>();
         int maxItem = menu.size()-1;
         itemsToOrder.add(menu.get(NumUtil.getRandomBetween(0,maxItem)));
         itemsToOrder.add(menu.get(NumUtil.getRandomBetween(0,maxItem)));
@@ -183,12 +180,36 @@ That menu contains 9 elements
         // dish format:
         //new Dish(String name, boolean isVegetarian, int calories, Enum Dish.Type.[MEAT, FISH, OTHER]);
 
+        List<Dish> randomDishes = createDishes();
+        takeOutShop.addMenuItemList(randomDishes);
+        takeOutShop.setNewMenu(randomDishes);
         //TODO: add the above dishes to the takeOutShop's current menu using takeOutShop.setNewMenu as above
 
         assertEquals(10,takeOutShop.getMenu().size());
         //TODO: publish new, improved menu to output using static method:MenuWriter.publish()
         //TODO: provide a personal file name
+        MenuWriter.publish("tofik_menu.json", takeOutShop.getMenu() );
+    }
 
+    private List<Dish> createDishes() {
+        List<Dish> randomDishes = new ArrayList<>();
+        String [] dishNames = {"Calas", "Charleston red rice", "Chicken bog", "Dirty rice", "Glorified rice",
+                "Gumbo", "Hawaiian haystack", "Jambalaya", "Rice and gravy", "Shrimp Creole"};
+
+        for(int i = 0; i < dishNames.length; i++){
+            boolean isVegetarian = i % 2 == 0 ? true : false;
+            int calories = i * 37 * (new Random().nextInt(23)) / (new Random().nextInt(13) + 1);
+            Dish.Type type1 = isVegetarian ? Dish.Type.MEAT : Dish.Type.OTHER;
+            Dish.Type type2 = i % 3 == 0 ? Dish.Type.FISH : Dish.Type.OTHER;
+            Dish dish;
+            if(i % 2 == 0){
+                dish = new Dish(dishNames[i], isVegetarian, calories, type1);
+            } else {
+                dish = new Dish(dishNames[i], isVegetarian, calories, type2);
+            }
+            randomDishes.add(dish);
+        }
+        return randomDishes;
     }
 
 

@@ -53,7 +53,17 @@ public class Address {
 
     //TODO: create toString method
 
-	@Override public int hashCode(){
+	@Override
+	public String toString() {
+		return "Address{" +
+				"buildingId=" + buildingId +
+				", floorId=" + floorId +
+				", apartmentId=" + apartmentId +
+				'}';
+	}
+
+	@Override
+	public int hashCode(){
 		int prime = 31;
 		int result = 1;
 		result = prime * result + apartmentId;
